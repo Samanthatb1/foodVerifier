@@ -1,0 +1,15 @@
+{
+  "name": "rbc2021",
+  "version": "1.0.0",
+  "description": "RBC Summer Tech Lab",
+  "main": "foodType.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Samantha Grieco",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  }
+}

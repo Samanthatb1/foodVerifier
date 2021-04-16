@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+    margin: 0;
+    padding: 0 ;
+}
+
+.frame{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #faf2da;
+    padding: 20px 20px;
+    display: block;
+    min-height: 2000px;
+}
+
+.main{
+    padding: 15px;
+    border-radius: 20px;
+    background: #fcb043;
+    min-height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1{
+    color: #f6eccf;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 5px;
+    font-size: 120px;
+    text-shadow: 
+    4px 4px 0px #fcb043, 
+    -4px 0 0px #fcb043,
+    10px 4px 0 #ea4a2c;
+    margin: 14px 0 13px 0;
+}
+
+@font-face {
+	font-family: League-Gothic;
+	src: url("League-Gothic.otf") format("opentype");
+}
+
+h2{
+    font-family: "League-Gothic", Courier;
+    text-transform: uppercase;
+    color: #74371b;
+    font-size: 35px;
+    letter-spacing: 0px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 3px 3px 0px #fcb043, 4px 4px 0px #ea4a2c;
+    margin-top: 0 ;
+}
+
+span{
+    width: 70vw ;
+    height: 4px;
+    border-radius: 5px;
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  background-clip: text;
+	  background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+	  animation: aitf 100s linear infinite;
+
+	  transform: translate3d(0,0,0);
+	  backface-visibility: hidden;
+}
+
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.sample-foods{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 77vw;
+    background-color: rgb(255, 246, 228);
+    padding: 20px ;
+    border-radius: 33px;
+}
+
+.common{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    padding: 14px ;
+}
+
+.common:hover{
+    color: #ea4a2c ;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 35px 35px 10px 35px;
+}
+
+label{
+    font-size: 30px ;
+    margin-bottom: 20px;
+    font-family: 'Kiwi Maru', serif;
+    margin-left: 10px ;
+}
+
+input::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+  }
+
+#food{
+    width: 40vw ;
+    border-radius: 20px;
+    height: 48px ;
+    background-color: rgb(255, 246, 228);
+    border: 2px solid rgb(255, 246, 228);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    padding-left: 10px; 
+}
+
+#food:focus{
+    outline: none ;
+    border: 2px solid rgb(128, 62, 0);
+}
+
+.form-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input[type=button]{
+    background-color: #302e2b;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 13px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 15px ;
+}
+
+input[type=button]:focus{
+    outline: none ;
+}
+
+
+input[type=button]:hover{
+   background: #ea4a2c;
+}
+
+#warning{
+    display: none;
+}
+
+.reveal{
+    display: block !important;
+    font-size: 20px ;
+}
+
+.data-button{
+    margin: 10px 0 0 10px;
+    font-size: 15px ;
+    color:#502613;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+}
+
+#database{
+    font-size: 22px ;
+    color: #ff411f;
+    text-shadow: 1px 1px #000000bb;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#result-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100% ;
+}
+
+#result-box img{
+    height: 350px;
+    width: 350px ;
+    margin: 25px 10px 5px 0;
+}
+
+#result-box  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 50px 0 50px;
+}
+
+#result-box  div p:nth-child(1) {
+    font-size: 60px;
+    font-family: 'Arvo', serif;
+    margin: 0 ;
+    text-shadow: 2px 2px #ea4a2c;
+    color: #4b5763;
+    margin-top: 25px ;
+  }
+
+#result-box  div p:nth-child(4) {
+    max-width: 67vw;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+#result-box  div p:nth-child(3) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px ;
+}
+
+#result-box  div p:nth-child(3)::first-line {
+    font-size: 40px ;
+    color: #f6eccf;
+    text-shadow: 2px 2px #ea4a2c;
+    line-height: 80px;
+  }
+
+#result-box  div p:nth-child(4)::first-line {
+font-size: 40px ;
+color: #f6eccf;
+text-shadow: 2px 2px #ea4a2c;
+line-height: 80px;
+font-family: 'Rubik', sans-serif;
+}
+

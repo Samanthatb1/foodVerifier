@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Verifier</title>
+    <meta name="viewport" content="width=100% width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="frame">
+        <div class="main">
+            <!--TITLE-->
+            <div class="title">
+                <h1>Food Verifier</h1>
+                <h2>Sample food's to verify:</h2>
+                <span>line</span>
+            </div>
+
+            <!--SAMPLE FOODS-->
+            <div class="sample-foods">
+                <div class="col">
+                    <p class="common">Fish pie</p>
+                    <p class="common">Timbits</p>
+                    <p class="common">Big Mac</p>
+                    <p class="common">Chick-Fil-A Sandwich</p>
+                </div>
+                <div class="col">
+                    <p class="common">Strawberry Rhubarb Pie</p>
+                    <p class="common">Beef Dumpling Stew</p>
+                    <p class="common">Split Pea Soup</p>
+                    <p class="common">French Onion Soup</p>
+                </div>
+                <div class="col">
+                    <p class="common">Jerk chicken with rice & peas</p>
+                    <p class="common">Broccoli & Stilton soup</p>
+                    <p class="common">Rock Cakes</p>
+                    <p class="common">Pumpkin Pie</p>
+                </div>
+                <div class="col">
+                    <p class="common">Grilled Mac and Cheese Sandwich</p>
+                    <p class="common">Clam chowder</p>
+                    <p class="common">Poutine</p>
+                    <p class="common">Key Lime Pie</p>
+                </div>
+                <div class="col">
+                    <p class="common">Peanut Butter Cookies</p>
+                    <p class="common">Creamy Tomato Soup</p>
+                    <p class="common">Carrot Cake</p>
+                    <p class="common">Turkey Meatloaf</p>
+                </div>
+            </div>
+            <span></span>
+        
+            <!--SEARCH BAR-->
+            <form autocomplete="off" name="inputFood" action="" id="form">
+                <label for="food">Enter your own dish:</label>
+                <div class="form-div">
+                    <input type="text" id="food" name="food" placeholder="Portuguese custard tarts" required>
+                    <input type="button" value="Submit" onclick="validateForm()"> <br>
+                </div> 
+                <div class="data-button" onclick="getDatabase()">What have others searched for?</div>
+            </form>
+            <p id="warning"></p>
+            <div id="database"></div>
+
+            <!--RESULTS-->
+            <div id="result-box"></div>
+        </div>
+    </div>
+
+    <script src="foodType.js"></script>
+    </script>
+
+</body>
+</html>

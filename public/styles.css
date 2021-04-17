@@ -248,3 +248,90 @@ line-height: 80px;
 font-family: 'Rubik', sans-serif;
 }
 
+@media (max-width: 922px) {
+    .common{
+      font-size: 15px ;
+    }
+  }
+  
+  
+  @media (max-width: 605px) {
+    .sample-foods{
+      flex-direction: column;
+    }
+    
+    .col{
+      display: flex ;
+      flex-direction: row ;
+      justify-content: space-evenly ;
+    }
+    
+    .common{
+      text-align: center ;
+    }
+    
+    h1{
+      font-size: 80px ;
+    }
+    input::placeholder {
+      font-size: 13px;
+    }
+    #result-box div{
+      padding: 5px ;
+    }
+    #result-box img{
+      width: 250px ;
+      height: 250px ;
+    }
+    #database {
+      font-size: 15px;
+  }
+  }
+  
+  
+  @media (max-width: 415px) {
+    h1{
+      font-size: 60px ;
+    }
+    h2 {
+      font-size: 30px ;
+    }
+    .common{
+      font-size: 13px ;
+      padding: 5px ;
+    }
+    input[type=button] {
+      padding: 9px 20px;
+    }
+    .sample-foods{
+      padding: 5px ;
+    }
+    #result-box div p:nth-child(1) {
+      font-size: 40px;
+  }
+  }
+  
+  
+  @media (max-width: 324px) {
+  .title{
+      width: 200px;
+   }
+    span{
+      width: 200px ;
+    }
+    h1{
+      font-size: 40px ;
+    }
+    h2 {
+      font-size: 20px ;
+    }
+    .sample-foods{
+      width: 250px;
+   }
+    #result-box div p:nth-child(4) {
+      font-size: 15px;
+  }
+    #result-box div p:nth-child(4) {
+      max-width: none ;
+  }
+  }
